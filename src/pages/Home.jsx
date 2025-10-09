@@ -2,6 +2,7 @@ import HeroSection from "../assets/HeroSection.png";
 import ScrollableProductSection from "../components/ScrollableProductSection";
 import { IoIosArrowForward } from "react-icons/io";
 import HorizontalScroll from "../components/HorizontalScrol";
+import HeartSection from "../components/HeartSection";
 import { bouqetType } from "../data/BouqetType";
 import IconCircle from "../components/IconCircle";
 import { productsData } from "../data/Product";
@@ -37,7 +38,7 @@ export default function Home() {
       </div>
 
       {/* Texte au milieu (pas contraint à la taille de l'image) */}
-      <div className="bg-greyBg absolute text-center py-2 md:py-4   flex-row justify-center items-center  px-3 md:px-8 max-w-[500px] md:max-w-[900px]">
+      <div className="bg-white absolute text-center py-2 md:py-4   flex-row justify-center items-center  px-3 md:px-8 max-w-[500px] md:max-w-[900px]">
         <p className=" text-lg md:text-4xl   ">
           Votre <span className="text-primaryPink font-semibold">meilleure destination </span> 
            pour sublimer chaque moment avec des fleurs d’exception
@@ -85,7 +86,9 @@ Choisissez votre bouquet selon l’évènement
         ))}
       </HorizontalScroll>
     </section>
+     
 
+     <HeartSection />
 {/* <div style={{ height: '600px', position: 'relative' }}>
   <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02}/>
 </div> */}

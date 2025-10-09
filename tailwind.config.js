@@ -43,6 +43,7 @@ module.exports = {
         secondaryPink : '#E4558D',
         primaryPink: '#FF85A1',   
         greyBg: '#F6F6F6',  
+        lightGrey : "#F6F6F6"
       },
     },
   },
