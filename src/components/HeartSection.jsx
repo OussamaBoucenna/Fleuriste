@@ -4,9 +4,12 @@ import Flower from "../assets/flowerLogo.svg";
 
 const HeartSection = () => {
   return (
-    <section className=" py-8 px-2 md:px-12 text-myGrey overflow-hidden">
-    
+    <section className=" py-8 px-2 md:px-12 text-myGrey   overflow-hidden">
 
+      <div className="w-[25%] rounded-[34px] overflow-hidden hidden md:block">
+          <img src="" alt="" />
+      </div>  
+  
       <div className="relative flex flex-col md:flex-row  text-center justify-center items-center px-4 md:px-12 w-full bg-greyBg rounded-[34px] md:rounded-[60px] overflow-hidden  z-10">
         {/* Texte */}
           {/* 🌸 Image décorative TOP LEFT (devient bottom-right en mobile) */}
@@ -25,14 +28,14 @@ const HeartSection = () => {
         alt=""
         className="absolute w-20 md:w-32 bottom-0 left-6 md:left-12"
       />
-        <div className="w-full md:w-[70%] text-start flex flex-col md:my-16 md:py-10 py-3 md:pb-14 justify-center items-center md:justify-start md:items-start  gap-4 md:gap-16">
+        <div className="w-full md:w-[70%] text-center md:text-start flex flex-col md:my-16 md:py-10 py-3 md:pb-14 justify-center items-center md:justify-start md:items-start  gap-4 md:gap-16">
           <h1 className="text-xl md:text-5xl font-bold w-fit">
             De votre{" "}
             <span className="text-secondaryPink">cœur</span> à leur{" "}
             <span className="text-secondaryPink">sourire</span>, nous nous
             occupons de tout !
           </h1>
-          <p className="text-lg md:text-3xl">
+          <p className="text-lg font-medium md:text-3xl">
             Commandez en ligne, payez en toute sécurité, et nous livrons vos
             fleurs avec soin à l’adresse de votre choix.
           </p>

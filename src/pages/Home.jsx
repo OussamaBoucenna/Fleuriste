@@ -7,6 +7,9 @@ import { bouqetType } from "../data/BouqetType";
 import IconCircle from "../components/IconCircle";
 import { productsData } from "../data/Product";
 import RoseCard from "../components/RoseCard";
+import BouquetComposer from "../components/BoquetComposerSection";
+import {TestimonialsSection}  from "../components/Comment";
+import InstagramSection from "../components/InstagramSection";
 
 
 export default function Home() {
@@ -92,6 +95,10 @@ Choisissez votre bouquet selon l’évènement
 {/* <div style={{ height: '600px', position: 'relative' }}>
   <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02}/>
 </div> */}
+  <BouquetComposer />
+  <TestimonialsSection/>
+      {/* Section Instagram */}
+      <InstagramSection />
     </main>
   );
 }
